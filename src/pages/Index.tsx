@@ -9,9 +9,30 @@ import hero4 from "@/assets/hero-4.jpg";
 import hero5 from "@/assets/hero-5.jpg";
 
 const shows = [
-  { date: "28 MAR 2026", venue: "Lyric Theatre, Gold Reef City Casino", city: "Johannesburg, ZA", status: "available" },
-  { date: "10 APR 2026", venue: "Wild Coast Sun", city: "Bizana / Port Edward, ZA", status: "available" },
-  { date: "13 JUN 2026", venue: "Opera Theatre, The Playhouse", city: "Durban, ZA", status: "available" },
+  {
+    date: "28 MAR 2026",
+    venue: "Lyric Theatre, Gold Reef City Casino",
+    city: "Johannesburg, ZA",
+    status: "available" as const,
+    ticketUrl: "https://www.webtickets.co.za/v2/Event.aspx?itemid=1554567432",
+    vendor: "Webtickets",
+  },
+  {
+    date: "10 APR 2026",
+    venue: "Wild Coast Sun",
+    city: "Bizana / Port Edward, ZA",
+    status: "available" as const,
+    ticketUrl: "https://www.webtickets.co.za/v2/Event.aspx?itemid=1554567433",
+    vendor: "Webtickets",
+  },
+  {
+    date: "13 JUN 2026",
+    venue: "Opera Theatre, The Playhouse",
+    city: "Durban, ZA",
+    status: "available" as const,
+    ticketUrl: "https://www.webtickets.co.za/v2/Event.aspx?itemid=1554567434",
+    vendor: "Webtickets",
+  },
 ];
 
 const releases = [
