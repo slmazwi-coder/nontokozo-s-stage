@@ -179,11 +179,23 @@ const Index = () => {
                   </div>
                   <div className="col-span-12 md:col-span-4 md:text-right">
                     {s.status === "available" ? (
-                      <a href="#" className="inline-block px-6 py-3 border border-gold text-gold text-xs tracking-[0.3em] uppercase hover:bg-gold hover:text-espresso transition-colors">
+                      <a
+                        href={s.ticketUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Buy tickets for ${s.venue} on ${s.date} via ${s.vendor}`}
+                        className="inline-flex items-center gap-2 px-6 py-3 border border-gold text-gold text-xs tracking-[0.3em] uppercase hover:bg-gold hover:text-espresso transition-colors"
+                      >
                         Buy Tickets
+                        <span aria-hidden className="text-base leading-none">↗</span>
                       </a>
-                    ) : (
+                    ) : s.status === "sold-out" ? (
                       <span className="inline-block px-6 py-3 bg-terracotta text-ivory text-xs tracking-[0.3em] uppercase">Sold Out</span>
+                    ) : (
+                      <span className="inline-block px-6 py-3 border border-ivory/30 text-ivory/60 text-xs tracking-[0.3em] uppercase">Coming Soon</span>
+                    )}
+                    {s.status === "available" && (
+                      <div className="mt-2 text-[10px] tracking-[0.3em] uppercase text-ivory/40 md:text-right">via {s.vendor}</div>
                     )}
                   </div>
                 </div>
