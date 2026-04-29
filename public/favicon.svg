@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" width="280" height="280">
+  <rect width="280" height="280" fill="#1a1208"/>
+
+  <!-- "Nontokozo" flowing script — line 1 -->
+  <g fill="none" stroke="#c9a45a" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 128 C22 108 24 92 26 82 L26 128 C30 110 38 92 50 78 C50 90 50 112 50 128" stroke-width="3.2"/>
+    <path d="M56 112 C56 104 62 98 70 99 C78 100 82 108 81 116 C80 124 74 129 66 127 C58 125 55 119 56 112Z" stroke-width="2.5"/>
+    <path d="M85 127 C85 116 85 104 86 98 C90 93 96 92 101 95 C107 99 108 109 108 128" stroke-width="2.5"/>
+    <path d="M114 79 L114 128" stroke-width="2.5"/>
+    <path d="M108 105 L122 105" stroke-width="2"/>
+    <path d="M127 112 C127 104 133 98 141 99 C149 100 153 108 152 116 C151 124 145 129 137 127 C129 125 126 119 127 112Z" stroke-width="2.5"/>
+    <path d="M158 78 L158 128" stroke-width="2.5"/>
+    <path d="M158 112 C163 107 170 100 176 93" stroke-width="2.2"/>
+    <path d="M162 110 C167 117 173 123 179 130" stroke-width="2.2"/>
+    <path d="M183 112 C183 104 189 98 197 99 C205 100 209 108 208 116 C207 124 201 129 193 127 C185 125 182 119 183 112Z" stroke-width="2.5"/>
+    <path d="M213 99 L225 99 L213 127 L227 127" stroke-width="2.5"/>
+    <path d="M232 112 C232 104 238 98 246 99 C254 100 258 108 257 116 C256 124 250 129 242 127 C234 125 231 119 232 112Z" stroke-width="2.5"/>
+  </g>
+
+  <!-- "Mkhize" bold script — line 2 -->
+  <g fill="none" stroke="#c9a45a" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 210 C22 192 23 178 24 168 C30 172 37 186 43 198 C49 186 57 172 63 168 C64 178 64 192 64 210" stroke-width="3.8"/>
+    <path d="M71 165 L71 212" stroke-width="3"/>
+    <path d="M71 196 C76 190 83 182 90 174" stroke-width="2.8"/>
+    <path d="M74 193 C80 201 87 209 94 213" stroke-width="2.8"/>
+    <path d="M99 165 L99 212" stroke-width="3"/>
+    <path d="M99 185 C102 177 109 172 116 174 C123 176 125 185 125 212" stroke-width="3"/>
+    <circle cx="133" cy="170" r="3" fill="#c9a45a" stroke="none"/>
+    <path d="M133 178 L133 212" stroke-width="3"/>
+    <path d="M140 179 L155 179 L140 212 L157 212" stroke-width="3"/>
+    <path d="M176 196 C168 196 163 203 164 211 C165 219 171 224 179 223 C186 222 191 217 192 212 C179 212 166 212 162 212" stroke-width="3"/>
+  </g>
+
+  <!-- Sweeping underline flourish -->
+  <path d="M18 228 C70 222 140 220 200 224 C222 226 232 228 240 225 C248 222 250 218 247 216"
+        fill="none" stroke="#c9a45a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18 228 C17 225 19 221 22 220"
+        fill="none" stroke="#c9a45a" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="247" cy="216" r="1.8" fill="#c9a45a"/>
+</svg>
