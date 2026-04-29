@@ -110,13 +110,20 @@ const releases = [
   },
 ];
 
-const stores = ["Spotify", "Apple Music", "YouTube Music", "Deezer", "Tidal", "Bandcamp"];
+const stores = [
+  { name: "Spotify", url: "https://open.spotify.com/artist/2xYE0LYxFRGK9CQxLlkE7H" },
+  { name: "Apple Music", url: "https://music.apple.com/us/artist/nontokozo-mkhize/1541464196" },
+  { name: "YouTube Music", url: "https://music.youtube.com/channel/UC8Ne8v8V5GARvMp32zf080Q" },
+  { name: "Deezer", url: "https://www.deezer.com/us/artist/114284412" },
+  { name: "Tidal", url: "https://tidal.com/browse/artist/22294280" },
+  { name: "Audiomack", url: "https://audiomack.com/nontokozo-mkhize" },
+];
 const socials = [
-  { name: "Instagram", handle: "@nontokozomkhize" },
-  { name: "TikTok", handle: "@nontokozomkhize" },
-  { name: "Facebook", handle: "Nontokozo Mkhize" },
-  { name: "YouTube", handle: "Nontokozo Mkhize" },
-  { name: "Twitter / X", handle: "@nontokozomkhize" },
+  { name: "Instagram", handle: "@nontokozomkhize", url: "https://www.instagram.com/nontokozomkhize" },
+  { name: "TikTok", handle: "@nontokozomkhize", url: "https://www.tiktok.com/@nontokozomkhize" },
+  { name: "Facebook", handle: "Nontokozo Mkhize", url: "https://www.facebook.com/nontokozo.mkhize.796" },
+  { name: "YouTube", handle: "Nontokozo Mkhize", url: "https://www.youtube.com/channel/UC8Ne8v8V5GARvMp32zf080Q" },
+  { name: "Twitter / X", handle: "@nontokozomkhize", url: "https://twitter.com/nontokozomkhize" },
 ];
 
 const posts = [
@@ -330,8 +337,8 @@ const Index = () => {
               <h3 className="font-serif text-2xl mb-6 text-espresso/80">Listen On</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
                 {stores.map((s) => (
-                  <a key={s} href="#" className="px-5 py-4 bg-ivory border border-espresso/10 text-center text-sm tracking-wider hover:bg-espresso hover:text-ivory transition-colors">
-                    {s}
+                  <a key={s.name} href={s.url} target="_blank" rel="noopener noreferrer" className="px-5 py-4 bg-ivory border border-espresso/10 text-center text-sm tracking-wider hover:bg-espresso hover:text-ivory transition-colors">
+                    {s.name}
                   </a>
                 ))}
               </div>
@@ -344,7 +351,7 @@ const Index = () => {
               <h3 className="font-serif text-2xl mb-6 text-espresso/80">Follow</h3>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {socials.map((s) => (
-                  <a key={s.name} href="#" className="flex justify-between items-center px-5 py-4 bg-ivory border border-espresso/10 hover:border-gold transition-colors group">
+                  <a key={s.name} href={s.url} target="_blank" rel="noopener noreferrer" className="flex justify-between items-center px-5 py-4 bg-ivory border border-espresso/10 hover:border-gold transition-colors group">
                     <span className="text-sm tracking-[0.2em] uppercase">{s.name}</span>
                     <span className="font-serif italic text-terracotta group-hover:text-gold">{s.handle}</span>
                   </a>
