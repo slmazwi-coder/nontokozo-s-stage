@@ -90,12 +90,10 @@ const Index = () => {
 
           <div className="mt-12 md:mt-16 flex flex-col items-center text-center">
             <span className="text-gold tracking-[0.5em] text-xs uppercase mb-4">South African Singer-Songwriter</span>
-            <h1 className="font-script text-gold leading-[0.85] text-7xl sm:text-8xl md:text-[10rem] lg:text-[13rem]">
-              Nontokozo
+            <h1 className="font-script text-gold leading-[0.88] text-6xl sm:text-7xl md:text-[8rem] lg:text-[11rem]">
+              Nontokozo<br />
+              <span className="font-serif not-italic text-ivory/90 text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-[0.15em]">Mkhize</span>
             </h1>
-            <h2 className="font-serif italic text-ivory/95 text-3xl md:text-5xl -mt-2 md:-mt-6 tracking-wide">
-              Mkhize
-            </h2>
             <div className="mt-6 flex items-center gap-4 text-ivory/70 text-xs md:text-sm tracking-[0.35em] uppercase">
               <span>Afro-Soul</span>
               <span className="text-gold">·</span>
