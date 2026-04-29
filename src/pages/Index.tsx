@@ -36,15 +36,78 @@ const shows = [
 ];
 
 const releases = [
-  { title: "Lindiwe (Deluxe)", year: "2025", type: "Album", tracks: "17 tracks", feat: "feat. Brenden Praise, Da Muziqal Chef, Kelvin Momo, Dumi Mkokstad, Xolly Mncwango, Ndabo Zulu, Bongane Sax", latest: true, label: "Sginci Media / EMPIRE" },
-  { title: "Lindiwe", year: "Jan 2025", type: "Album", tracks: "12 tracks" },
-  { title: "Moyongcwele 2.0", year: "2024", type: "Single", feat: "feat. Xolly Mncwango & Dumi Mkokstad" },
-  { title: "Imisebenzi", year: "2024", type: "Single", feat: "feat. Aymos & Starr Healer" },
-  { title: "Moyongcwele", year: "2024", type: "Single" },
-  { title: "Incwadi", year: "2024", type: "Single", feat: "feat. Eemoh" },
-  { title: "Amathuna", year: "2024", type: "Single" },
-  { title: "Lu Strong", year: "2023", type: "Single", feat: "feat. Nomfundo Moh" },
-  { title: "Ungowami", year: "2023", type: "Single" },
+  {
+    title: "The Live Experience",
+    year: "2026",
+    type: "Album",
+    tracks: "Live Album",
+    label: "Sginci Media / EMPIRE",
+    cover: "https://i.scdn.co/image/ab67616d00001e02f8ee26ff437351012dc83701",
+    spotifyUrl: "https://open.spotify.com/album/62uXkHtrX8KDil8lEDSr7m",
+    latest: true,
+  },
+  {
+    title: "Lindiwe (Deluxe)",
+    year: "2025",
+    type: "Album",
+    tracks: "17 tracks",
+    feat: "feat. Brenden Praise, Da Muziqal Chef, Kelvin Momo, Dumi Mkokstad, Xolly Mncwango, Ndabo Zulu, Bongane Sax",
+    label: "Sginci Media / EMPIRE",
+    cover: "https://i.scdn.co/image/ab67616d00001e021f253ad09d817c4dbd37b6fd",
+    spotifyUrl: "https://open.spotify.com/album/1tZE787T2iw039Nu9eSjum",
+  },
+  {
+    title: "Lindiwe",
+    year: "Jan 2025",
+    type: "Album",
+    tracks: "12 tracks",
+    cover: "https://i.scdn.co/image/ab67616d00001e0236af46814c87b4a7a648b19c",
+    spotifyUrl: "https://open.spotify.com/album/7iUCCiZJQEiqKw4k6e0ved",
+  },
+  {
+    title: "Okubi",
+    year: "2025",
+    type: "Single",
+    cover: "https://i.scdn.co/image/ab67616d00001e02b44d1668b86e2ce5ce37281f",
+    spotifyUrl: "https://open.spotify.com/album/1L3Ffqrxs7yS1tAAgghpnd",
+  },
+  {
+    title: "Esandleni",
+    year: "2024",
+    type: "Single",
+    cover: "https://i.scdn.co/image/ab67616d00001e023c8284fe3592ea29ee046585",
+    spotifyUrl: "https://open.spotify.com/album/4GG6rS5yCifLj4BpOzkmab",
+  },
+  {
+    title: "Moyongcwele",
+    year: "2024",
+    type: "Single",
+    cover: "https://i.scdn.co/image/ab67616d00001e02d07a221e205bd50330080f95",
+    spotifyUrl: "https://open.spotify.com/album/3Md7jFJCda78uhck7VfPJC",
+  },
+  {
+    title: "Incwadi",
+    year: "2024",
+    type: "Single",
+    feat: "feat. Eemoh",
+    cover: "https://i.scdn.co/image/ab67616d00001e0212f3b708e1f89ab6282f6cef",
+    spotifyUrl: "https://open.spotify.com/album/5RxSqYZa8pXmQWYe4taarq",
+  },
+  {
+    title: "AMEN",
+    year: "2024",
+    type: "Single",
+    cover: "https://i.scdn.co/image/ab67616d00001e02e8c763df0ba405e6716778e4",
+    spotifyUrl: "https://open.spotify.com/album/6ZLHIHtUPI0Y5HNf3LCbt7",
+  },
+  {
+    title: "Lu Strong",
+    year: "2023",
+    type: "Single",
+    feat: "feat. Nomfundo Moh",
+    cover: "https://i.scdn.co/image/ab67616d00001e0236af46814c87b4a7a648b19c",
+    spotifyUrl: "https://open.spotify.com/artist/2xYE0LYxFRGK9CQxLlkE7H",
+  },
 ];
 
 const stores = ["Spotify", "Apple Music", "YouTube Music", "Deezer", "Tidal", "Bandcamp"];
@@ -216,28 +279,37 @@ const Index = () => {
           <div className="mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
             {releases.map((r, i) => (
               <Reveal key={r.title} delay={(i % 4) * 80}>
-                <div className="group cursor-pointer">
-                  <div className="relative aspect-square overflow-hidden bg-gradient-warm">
-                    <div className="absolute inset-0 flex items-center justify-center p-6">
-                      <div className="font-script text-4xl md:text-5xl text-gold/90 text-center leading-none">
-                        {r.title.split(" ")[0]}
-                      </div>
+                <a
+                  href={r.spotifyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group cursor-pointer block"
+                >
+                  <div className="relative aspect-square overflow-hidden">
+                    <img
+                      src={r.cover}
+                      alt={`${r.title} cover art`}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-espresso/0 group-hover:bg-espresso/40 transition-all duration-300 flex items-center justify-center">
+                      <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-ivory text-xs tracking-[0.3em] uppercase border border-ivory/60 px-4 py-2">
+                        Listen ↗
+                      </span>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-overlay opacity-60 group-hover:opacity-30 transition-opacity" />
                     {r.latest && (
                       <span className="absolute top-3 left-3 bg-gold text-espresso text-[10px] tracking-[0.25em] uppercase px-2 py-1">Latest</span>
                     )}
-                    <span className="absolute top-3 right-3 border border-ivory/50 text-ivory text-[10px] tracking-[0.25em] uppercase px-2 py-1 bg-espresso/40">
+                    <span className="absolute top-3 right-3 border border-ivory/60 text-ivory text-[10px] tracking-[0.25em] uppercase px-2 py-1 bg-espresso/50">
                       {r.type}
                     </span>
                   </div>
                   <div className="mt-4">
-                    <h3 className="font-serif text-2xl leading-tight">{r.title}</h3>
+                    <h3 className="font-serif text-xl leading-tight">{r.title}</h3>
                     <p className="text-xs tracking-[0.25em] uppercase text-espresso/55 mt-1">{r.year}{r.tracks ? ` · ${r.tracks}` : ""}</p>
                     {r.feat && <p className="text-xs text-espresso/60 mt-2 italic">{r.feat}</p>}
                     {r.label && <p className="text-xs text-terracotta mt-1 tracking-wider">{r.label}</p>}
                   </div>
-                </div>
+                </a>
               </Reveal>
             ))}
           </div>
