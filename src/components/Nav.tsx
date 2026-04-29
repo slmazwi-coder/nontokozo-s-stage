@@ -31,8 +31,8 @@ export const Nav = () => {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-        <Link to="/" className="font-script text-3xl text-ivory leading-none translate-y-1">
-          Nontokozo
+        <Link to="/" className="font-script text-2xl text-ivory leading-none translate-y-1 tracking-wide">
+          Nontokozo Mkhize
         </Link>
 
         <div className="hidden md:flex items-center gap-10">
@@ -53,7 +53,7 @@ export const Nav = () => {
           </Link>
         </div>
 
-        <button className="md:hidden text-ivory" onClick={() => setOpen(!open)} aria-label="menu">
+        <button className="md:hidden text-ivory" onClick={() => setOpen(!open)} aria-label="Toggle navigation menu">
           {open ? <X /> : <Menu />}
         </button>
       </nav>
