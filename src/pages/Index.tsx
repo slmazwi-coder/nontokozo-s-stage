@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Reveal } from "@/components/Reveal";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -133,6 +134,18 @@ const posts = [
 ];
 
 const Index = () => {
+  const promoVideoRef = useRef<HTMLVideoElement>(null);
+
+  const handleVideoMouseEnter = () => {
+    promoVideoRef.current?.play();
+  };
+
+  const handleVideoMouseLeave = () => {
+    if (promoVideoRef.current) {
+      promoVideoRef.current.pause();
+    }
+  };
+
   return (
     <div className="bg-ivory text-espresso min-h-screen">
       <Nav />
@@ -155,6 +168,26 @@ const Index = () => {
             </div>
             <div className="hidden md:block col-span-3 overflow-hidden">
               <img src={hero5} alt="Nontokozo at Metro FM radio interview" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            </div>
+          </div>
+
+          {/* PROMO VIDEO */}
+          <div
+            className="mt-8 md:mt-12 flex justify-center"
+            onMouseEnter={handleVideoMouseEnter}
+            onMouseLeave={handleVideoMouseLeave}
+          >
+            <div className="w-full max-w-3xl overflow-hidden rounded-lg shadow-2xl">
+              <video
+                ref={promoVideoRef}
+                src="/promo.mp4"
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="w-full h-auto cursor-pointer"
+                poster=""
+              />
             </div>
           </div>
 
