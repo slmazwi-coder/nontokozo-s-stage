@@ -11,27 +11,19 @@ import hero5 from "@/assets/hero-5.jpg";
 
 const shows = [
   {
-    date: "28 MAR 2026",
-    venue: "Lyric Theatre, Gold Reef City Casino",
-    city: "Johannesburg, ZA",
-    status: "available" as const,
-    ticketUrl: "https://www.webtickets.co.za/v2/Event.aspx?itemid=1554567432",
-    vendor: "Webtickets",
-  },
-  {
-    date: "10 APR 2026",
-    venue: "Wild Coast Sun",
-    city: "Bizana / Port Edward, ZA",
-    status: "available" as const,
-    ticketUrl: "https://www.webtickets.co.za/v2/Event.aspx?itemid=1554567433",
-    vendor: "Webtickets",
-  },
-  {
     date: "13 JUN 2026",
     venue: "Opera Theatre, The Playhouse",
     city: "Durban, ZA",
     status: "available" as const,
-    ticketUrl: "https://www.webtickets.co.za/v2/Event.aspx?itemid=1554567434",
+    ticketUrl: "https://www.webtickets.co.za/v2/event.aspx?itemid=1584494880",
+    vendor: "Webtickets",
+  },
+  {
+    date: "15 AUG 2026",
+    venue: "Wild Coast Sun",
+    city: "Port Edward, ZA",
+    status: "available" as const,
+    ticketUrl: "https://www.webtickets.co.za/v2/event.aspx?itemid=1586944505",
     vendor: "Webtickets",
   },
 ];
@@ -181,7 +173,6 @@ const Index = () => {
               <video
                 ref={promoVideoRef}
                 src="/promo.mp4"
-                muted
                 loop
                 playsInline
                 preload="metadata"
