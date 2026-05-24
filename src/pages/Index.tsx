@@ -221,7 +221,7 @@ const Index = () => {
           </Reveal>
           <Reveal delay={150} className="md:col-span-7 space-y-5 text-base md:text-lg leading-relaxed text-espresso/85">
             <p>
-              <span className="font-serif italic text-xl">Nontokozo Hlengwa Mkhize</span> (born 2000, Inanda, KwaZulu-Natal) is a South African Afro-soul and gospel singer-songwriter. She began her musical journey in 2017 as a backing vocalist, working alongside Benjamin Dube, Mondli Ngcobo, Naima Kay, Dumi Mkokstad, and Sjava.
+              <span className="font-serif italic text-xl">Nontokozo Hlengwa Mkhize</span> (Inanda, KwaZulu-Natal) is a South African Afro-soul and gospel singer-songwriter. She began her musical journey in 2017 as a backing vocalist, working alongside Benjamin Dube, Mondli Ngcobo, Naima Kay, Dumi Mkokstad, and Sjava.
             </p>
             <p>
               She launched her solo career in 2023 with her debut single <em>"Lu Strong"</em> (feat. Nomfundo Moh). Her debut album <em>Lindiwe</em> (2025, Sginci Media / EMPIRE) debuted at #8 on the SA Top Albums Chart and surpassed 1 million streams in its first week. Her single <em>"Esandleni"</em> became the most-streamed solo song by a female artist in a single week on Spotify South Africa, surpassing Adele's "Easy on Me."
